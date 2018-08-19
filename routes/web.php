@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('/inbox', 'GmailController@inbox');
 Route::get('/oauth/gmail', function (){
     return LaravelGmail::redirect();
 });
