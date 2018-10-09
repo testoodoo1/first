@@ -18,6 +18,7 @@ Route::get('/oauth/gmail', function (){
 
 Route::get('/oauth/gmail/callback', function (){
     LaravelGmail::makeToken();
+    
     return redirect()->to('/');
 });
 
